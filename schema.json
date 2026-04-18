@@ -1,0 +1,292 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.minenerlexconsulting.com/#organization",
+      "name": "MinEnerLex Consulting SAS",
+      "alternateName": "MinEnerLex",
+      "url": "https://www.minenerlexconsulting.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.minenerlexconsulting.com/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.minenerlexconsulting.com/og-image.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "description": "Consultores internacionales en compra de producción minera y asesoría jurídica minera. Más de 10 años de experiencia y más de 200 operaciones exitosas.",
+      "foundingDate": "2015",
+      "sameAs": [
+        "https://www.linkedin.com/company/minenerlex-consulting",
+        "https://www.facebook.com/minenerlex"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+57-314-880-8015",
+        "contactType": "sales",
+        "availableLanguage": ["Spanish", "English"],
+        "areaServed": ["CO", "PE", "BO", "EC", "VE", "GH", "BF"]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.minenerlexconsulting.com/#website",
+      "url": "https://www.minenerlexconsulting.com/",
+      "name": "MinEnerLex Consulting",
+      "description": "Compra de producción minera al precio internacional LBMA",
+      "publisher": {
+        "@id": "https://www.minenerlexconsulting.com/#organization"
+      },
+      "inLanguage": "es"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.minenerlexconsulting.com/compra-oro/#webpage",
+      "url": "https://www.minenerlexconsulting.com/compra-oro/",
+      "name": "Venta de Oro Directo de Mina | Precio Internacional al Día | MinEnerLex",
+      "isPartOf": {
+        "@id": "https://www.minenerlexconsulting.com/#website"
+      },
+      "about": {
+        "@id": "https://www.minenerlexconsulting.com/#organization"
+      },
+      "description": "Pagamos precio internacional por doré de mina, lingotes y polvo de oro. Más de 200 operaciones cerradas con mineros artesanales. Respuesta en 24h.",
+      "breadcrumb": {
+        "@id": "https://www.minenerlexconsulting.com/compra-oro/#breadcrumb"
+      },
+      "inLanguage": "es",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": ["https://www.minenerlexconsulting.com/compra-oro/"]
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.minenerlexconsulting.com/compra-oro/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.minenerlexconsulting.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Compra de Oro",
+          "item": "https://www.minenerlexconsulting.com/compra-oro/"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.minenerlexconsulting.com/#localbusiness",
+      "name": "MinEnerLex Consulting SAS",
+      "image": "https://www.minenerlexconsulting.com/office.jpg",
+      "priceRange": "$$",
+      "telephone": "+57-314-880-8015",
+      "email": "cotizaciones@minenerlexconsulting.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrera 4 N. 6A - 161, Bocagrande",
+        "addressLocality": "Cartagena de Indias",
+        "addressRegion": "Bolívar",
+        "postalCode": "130001",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "10.3910",
+        "longitude": "-75.5384"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Perú"
+        },
+        {
+          "@type": "Country",
+          "name": "Bolivia"
+        },
+        {
+          "@type": "Country",
+          "name": "Colombia"
+        },
+        {
+          "@type": "Country",
+          "name": "Ecuador"
+        },
+        {
+          "@type": "Country",
+          "name": "Venezuela"
+        },
+        {
+          "@type": "Continent",
+          "name": "África"
+        }
+      ],
+      "serviceType": ["Compra de oro", "Asesoría jurídica minera", "Consultoría técnica minera", "Comercialización de minerales"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Compra",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Compra de Doré de Mina",
+              "description": "Adquisición de oro en bruto directamente de operaciones mineras artesanales y medianas"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Compra de Lingotes Refinados",
+              "description": "Adquisición de barras de oro con certificación internacional de pureza"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Compra de Polvo de Oro",
+              "description": "Adquisición de material granulado y pepitas menores"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "200",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://www.minenerlexconsulting.com/compra-oro/#review1",
+      "author": {
+        "@type": "Person",
+        "name": "Marco Antonio Ríos"
+      },
+      "datePublished": "2024-03-15",
+      "reviewBody": "Llevaba tres años intentando vender mi producción a precio justo. MinEnerLex no solo me pagó el valor real de mi doré, sino que me ayudó a regularizar la documentación de mi mina.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "itemReviewed": {
+        "@id": "https://www.minenerlexconsulting.com/#localbusiness"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.minenerlexconsulting.com/compra-oro/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué papeles necesito para vender mi producción?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de su ubicación, pero generalmente pedimos: certificado de origen minero (o constancia de la autoridad local), análisis de laboratorio si lo tiene, y su documento de identidad. Si le falta algo, le ayudamos a gestionarlo. No dejamos que un trámite detenga una operación justa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo calculan el precio que me van a pagar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tomamos el precio internacional del día (cotización LBMA), multiplicamos por los gramos finos de su material según el análisis de pureza, y descontamos solo los costos de refinación si aplica. Le entregamos una hoja con el cálculo paso a paso antes de que tome una decisión. No hay letras chiquitas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo demora todo el proceso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Desde que nos contacta hasta que tiene el dinero en su cuenta: entre 3 y 15 días hábiles. Depende de qué tan rápido tengamos la documentación, la ubicación de su mina, y si necesita refinación. Operaciones simples con lingotes certificados pueden cerrarse en 48 horas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Pueden comprar si mi mina está en una zona remota?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Tenemos experiencia en zonas de difícil acceso de Perú, Bolivia, Colombia, Ecuador y África occidental. Nos movemos a donde esté usted, o coordinamos un punto de encuentro seguro. La logística es nuestro problema, no el suyo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Ofrecen servicios además de la compra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Como consultora integral, también ofrecemos asesoría jurídica minera, gestión de permisos, y consultoría técnica para mejorar la extracción. Muchos de nuestros clientes empezaron vendiéndonos material y hoy les ayudamos a formalizar toda su operación."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "Cómo Vender Oro de Mina al Precio Internacional",
+      "description": "Guía paso a paso para vender su producción minera a través de MinEnerLex Consulting",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.minenerlexconsulting.com/proceso-venta-oro.jpg"
+      },
+      "totalTime": "PT15D",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": "0"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Primera Conversación Sin Compromiso",
+          "text": "Cuéntenos qué material tiene, en qué cantidad y dónde se encuentra. Le explicamos cómo funciona sin presión ni costos ocultos.",
+          "url": "https://www.minenerlexconsulting.com/compra-oro/#como-funciona"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Revisión de Documentación",
+          "text": "Solicitamos certificado de origen minero, análisis previo si lo tiene, y documento de identidad. Le ayudamos si le falta algún papel.",
+          "url": "https://www.minenerlexconsulting.com/compra-oro/#como-funciona"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Análisis y Verificación Presencial",
+          "text": "Nuestros técnicos visitan su operación o coordinan el análisis en laboratorio certificado. Determinamos la pureza exacta y el peso real.",
+          "url": "https://www.minenerlexconsulting.com/compra-oro/#como-funciona"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Oferta y Pago Directo",
+          "text": "Recibe una oferta por escrito basada en el precio LBMA del día. Si acepta, el pago se realiza en máximo 48 horas hábiles.",
+          "url": "https://www.minenerlexconsulting.com/compra-oro/#como-funciona"
+        }
+      ]
+    }
+  ]
+}
