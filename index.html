@@ -3,433 +3,664 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Compra de oro directo de mina. Precios competitivos internacionales para doré, barras refinadas y polvo de oro. Operamos en Perú, Bolivia, Ecuador, Venezuela y África.">
-  <title>Compra de Oro Directo de Mina | MinEnerLex Consulting</title>
+  <meta name="description" content="Vendemos su doré, lingotes o pepitas de oro al mejor precio del mercado internacional. +200 operaciones en Perú, Bolivia y Colombia. Cotización gratuita en 24h. Sin intermediarios.">
+  <title>Compra Oro Directo de Mina · Pago LBMA en 48h | MinEnerLex</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Compra Oro Directo de Mina · Pago LBMA en 48h | MinEnerLex">
+  <meta property="og:description" content="Compre su doré, lingotes o pepitas al precio real del mercado internacional. +200 operaciones. Cotización gratuita en 24h.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1200&h=630&fit=crop">
+  <meta property="og:url" content="https://minenerlexconsulting.com/">
+  <meta property="og:locale" content="es_CO">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-v2.css">
 </head>
 <body>
-  <!-- Skip to main content for accessibility -->
-  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
-
-  <!-- Navigation -->
-  <header class="site-header" role="banner">
-    <div class="container header-container">
-      <a href="/" class="logo" aria-label="MinEnerLex Consulting - Inicio">
-        <span class="logo__icon" aria-hidden="true">◆</span>
-        <span class="logo__text">MinEnerLex</span>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">◆</div>
+        <span>MinEnerLex</span>
       </a>
-
-      <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
-        <span class="nav-toggle__bar" aria-hidden="true"></span>
-        <span class="nav-toggle__bar" aria-hidden="true"></span>
-        <span class="nav-toggle__bar" aria-hidden="true"></span>
-      </button>
-
-      <nav class="main-nav" id="main-nav" role="navigation" aria-label="Navegación principal">
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            <a href="#proceso" class="nav-list__link">Proceso</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#formatos" class="nav-list__link">Formatos</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#faq" class="nav-list__link">FAQ</a>
-          </li>
-          <li class="nav-list__item nav-list__item--cta">
-            <a href="#contacto" class="btn btn--primary">Contactar Ahora</a>
-          </li>
-        </ul>
+      <nav class="nav-desktop">
+        <a href="#proceso" class="nav-link">Proceso</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#testimonios" class="nav-link">Testimonios</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contacto" class="btn btn-primary">Cotizar Ahora</a>
       </nav>
     </div>
   </header>
 
-  <main id="main-content">
-    <!-- Hero Section -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__bg" aria-hidden="true">
-        <div class="hero__gradient"></div>
-      </div>
-      <div class="container hero__content">
-        <div class="hero__text">
-          <span class="hero__eyebrow">Compradores Internacionales de Oro</span>
-          <h1 id="hero-title" class="hero__title">
-            Compra de Oro
-            <span class="hero__title--accent">Directo de Mina</span>
-          </h1>
-          <p class="hero__description">
-            Precios competitivos alineados con el mercado internacional.
-            Compramos doré de mina, barras refinadas y polvo de oro.
-            Operamos en Perú, Bolivia, Ecuador, Venezuela y África.
-          </p>
-          <div class="hero__actions">
-            <a href="#contacto" class="btn btn--primary btn--large">
-              Vender mi Producción
-              <span aria-hidden="true">→</span>
-            </a>
-            <a href="#proceso" class="btn btn--secondary btn--large">
-              Conocer el Proceso
-            </a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-particles" id="particles"></div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">✦ Operamos desde 2015 · Miembros activos en Colombia, Perú y Bolivia</div>
+        <h1 class="hero-title">
+          Compra de Oro
+          <span class="hero-title-accent">Directo de Mina</span>
+        </h1>
+        <p class="hero-description">
+          Compramos su producción al precio que fija el mercado de Londres (LBMA), sin descuentos injustificados. Doré, lingotes y pepitas. Más de 200 productores en 5 países nos eligen desde 2015.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary btn-lg">Solicitar Cotización</a>
+          <a href="#proceso" class="btn btn-secondary btn-lg">Ver Proceso</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">+200</span>
+            <span class="stat-label">Operaciones Exitosas</span>
           </div>
-          <div class="hero__stats" aria-label="Estadísticas de la empresa">
-            <div class="stat">
-              <span class="stat__number">10+</span>
-              <span class="stat__label">Años de Experiencia</span>
-            </div>
-            <div class="stat">
-              <span class="stat__number">5</span>
-              <span class="stat__label">Países de Operación</span>
-            </div>
-            <div class="stat">
-              <span class="stat__number">&lt;24h</span>
-              <span class="stat__label">Tiempo de Respuesta</span>
-            </div>
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Años de Experiencia</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Países</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Trust Bar -->
-    <section class="trust-bar" aria-label="Países donde operamos">
-      <div class="container">
-        <p class="trust-bar__title">Operamos en:</p>
-        <ul class="trust-bar__flags">
-          <li class="flag">
-            <span class="flag__icon" aria-hidden="true">🇵🇪</span>
-            <span class="flag__name">Perú</span>
-          </li>
-          <li class="flag">
-            <span class="flag__icon" aria-hidden="true">🇧🇴</span>
-            <span class="flag__name">Bolivia</span>
-          </li>
-          <li class="flag">
-            <span class="flag__icon" aria-hidden="true">🇻🇪</span>
-            <span class="flag__name">Venezuela</span>
-          </li>
-          <li class="flag">
-            <span class="flag__icon" aria-hidden="true">🇪🇨</span>
-            <span class="flag__name">Ecuador</span>
-          </li>
-          <li class="flag">
-            <span class="flag__icon" aria-hidden="true">🌍</span>
-            <span class="flag__name">África</span>
-          </li>
-        </ul>
+      <div class="hero-visual">
+        <div class="hero-image-container">
+          <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=800&h=500&fit=crop" alt="Lingotes de oro" class="hero-image">
+          <div class="hero-image-overlay"></div>
+        </div>
+        <div class="floating-card floating-card-1">
+          <div class="floating-card-icon">🏆</div>
+          <div class="floating-card-text">Precio LBMA</div>
+          <div class="floating-card-value">+98%</div>
+        </div>
+        <div class="floating-card floating-card-2">
+          <div class="floating-card-icon">⚡</div>
+          <div class="floating-card-text">Tiempo promedio</div>
+          <div class="floating-card-value">7 días</div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Process Section -->
-    <section id="proceso" class="section section--alt" aria-labelledby="proceso-title">
-      <div class="container">
-        <header class="section__header">
-          <span class="section__eyebrow">Protocolo de Compra</span>
-          <h2 id="proceso-title" class="section__title">Nuestro Proceso en 4 Pasos</h2>
-          <p class="section__description">
-            Protocolo estructurado para garantizar transparencia, seguridad y agilidad en cada operación.
-          </p>
-        </header>
-
-        <ol class="process-list">
-          <li class="process-step">
-            <div class="process-step__number" aria-hidden="true">01</div>
-            <div class="process-step__content">
-              <h3 class="process-step__title">Contacto Inicial</h3>
-              <p class="process-step__text">
-                El minero o productor se pone en contacto con nuestro equipo para expresar su interés en vender.
-              </p>
-            </div>
-          </li>
-          <li class="process-step">
-            <div class="process-step__number" aria-hidden="true">02</div>
-            <div class="process-step__content">
-              <h3 class="process-step__title">Envío de Documentación</h3>
-              <p class="process-step__text">
-                El productor envía documentos del mineral, análisis de laboratorio y certificaciones disponibles.
-              </p>
-            </div>
-          </li>
-          <li class="process-step">
-            <div class="process-step__number" aria-hidden="true">03</div>
-            <div class="process-step__content">
-              <h3 class="process-step__title">Verificación y Análisis</h3>
-              <p class="process-step__text">
-                Nuestros técnicos especializados verifican la documentación y coordinan el análisis del material.
-              </p>
-            </div>
-          </li>
-          <li class="process-step">
-            <div class="process-step__number" aria-hidden="true">04</div>
-            <div class="process-step__content">
-              <h3 class="process-step__title">Negociación y Compra</h3>
-              <p class="process-step__text">
-                Presentamos una oferta competitiva basada en el precio internacional del oro y cerramos la operación.
-              </p>
-            </div>
-          </li>
-        </ol>
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container trust-bar-content">
+      <span class="trust-label">Operamos en:</span>
+      <div class="trust-flags">
+        <div class="trust-flag">
+          <span class="flag-icon">🇵🇪</span>
+          <span>Perú</span>
+        </div>
+        <div class="trust-flag">
+          <span class="flag-icon">🇧🇴</span>
+          <span>Bolivia</span>
+        </div>
+        <div class="trust-flag">
+          <span class="flag-icon">🇨🇴</span>
+          <span>Colombia</span>
+        </div>
+        <div class="trust-flag">
+          <span class="flag-icon">🇪🇨</span>
+          <span>Ecuador</span>
+        </div>
+        <div class="trust-flag">
+          <span class="flag-icon">🌍</span>
+          <span>África</span>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Formats Section -->
-    <section id="formatos" class="section" aria-labelledby="formatos-title">
-      <div class="container">
-        <header class="section__header">
-          <span class="section__eyebrow">Formatos de Compra</span>
-          <h2 id="formatos-title" class="section__title">¿Qué Formato de Oro Compramos?</h2>
-          <p class="section__description">
-            Adquirimos oro en diferentes presentaciones, siempre con los más altos estándares de calidad.
-          </p>
-        </header>
+  <!-- Servicios / Cards -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+        <span style="color: var(--gold-600); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Qué Compramos</span>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--navy-900); margin-top: 1rem;">
+          Adquirimos Todo Tipo de Material Aurífero
+        </h2>
+      </div>
 
-        <div class="cards-grid">
-          <article class="card card--featured">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="8" y="20" width="32" height="20" rx="2"/>
-                <path d="M16 20V14a8 8 0 0116 0v6"/>
-              </svg>
-            </div>
-            <h3 class="card__title">Doré de Mina</h3>
-            <p class="card__text">
-              Oro en bruto directamente de la explotación minera. Común en operaciones artesanales y medianas.
-            </p>
-            <ul class="card__list">
-              <li>Pago inmediato</li>
-              <li>Análisis in situ</li>
+      <div class="cards-grid">
+        <article class="card card-featured">
+          <span class="card-badge">Más Demandado</span>
+          <div style="overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Doré de mina" class="card-image">
+          </div>
+          <div class="card-content">
+            <div class="card-icon">⛏️</div>
+            <h3 class="card-title">Doré de Mina</h3>
+            <p class="card-text">Oro en bruto directo de la explotación. La forma más común en minería artesanal.</p>
+            <ul class="card-features">
+              <li>Análisis de pureza sin costo</li>
+              <li>Pago inmediato por transferencia</li>
               <li>Logística coordinada</li>
             </ul>
-          </article>
+          </div>
+        </article>
 
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="12" y="8" width="24" height="32" rx="2"/>
-                <line x1="12" y1="16" x2="36" y2="16"/>
-                <line x1="12" y1="32" x2="36" y2="32"/>
-              </svg>
-            </div>
-            <h3 class="card__title">Barras Refinadas</h3>
-            <p class="card__text">
-              Lingotes de oro de alta pureza con certificación internacional. Ideal para grandes volúmenes.
-            </p>
-          </article>
+        <article class="card">
+          <div style="overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&h=400&fit=crop" alt="Barras de oro" class="card-image">
+          </div>
+          <div class="card-content">
+            <div class="card-icon">🏆</div>
+            <h3 class="card-title">Lingotes Refinados</h3>
+            <p class="card-text">Barras certificadas con pureza .995 o superior. Precio más cercano al LBMA.</p>
+            <ul class="card-features">
+              <li>Mayor valor por pureza</li>
+              <li>Documentación completa</li>
+            </ul>
+          </div>
+        </article>
 
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="24" cy="24" r="16"/>
-                <circle cx="24" cy="24" r="8"/>
-              </svg>
+        <article class="card">
+          <div style="overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1569017388730-020b5f80a004?w=600&h=400&fit=crop" alt="Polvo de oro" class="card-image">
+          </div>
+          <div class="card-content">
+            <div class="card-icon">✨</div>
+            <h3 class="card-title">Pepitas y Polvo</h3>
+            <p class="card-text">Aceptamos lotes de cualquier tamaño. Evaluamos muestras antes de compra total.</p>
+            <ul class="card-features">
+              <li>Lotes desde 100g</li>
+              <li>Análisis in situ</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="section testimonials" id="testimonios">
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+        <span style="color: var(--gold-400); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Testimonios</span>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: white; margin-top: 1rem;">
+          Lo Que Dicen Nuestros Productores
+        </h2>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <!-- Testimonio 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-quote">
+            Llevaba tres años intentando vender mi producción a precio justo.
+            MinEnerLex no solo me pagó el valor real de mi doré, sino que me ayudaron
+            a regularizar la documentación de mi mina. Hoy soy un cliente fiel.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar-monogram">M</div>
+            <div class="testimonial-info">
+              <h4>Marco Antonio Ríos</h4>
+              <p>Productor Minero — Potosí, Bolivia</p>
             </div>
-            <h3 class="card__title">Polvo de Oro</h3>
-            <p class="card__text">
-              Oro en polvo o pepitas menores. Aceptamos lotes de diferentes tamaños y purezas.
-            </p>
-          </article>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-quote">
+            Operamos una pequeña mina en el Chocó y siempre nos ofrecían precios
+            por debajo del mercado. Con MinEnerLex por primera vez recibimos el
+            cálculo transparente por escrito antes de firmar. Confianza total.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar-monogram">C</div>
+            <div class="testimonial-info">
+              <h4>Carlos Emilio Palacios</h4>
+              <p>Minero Artesanal — Chocó, Colombia</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-quote">
+            Tenía pepitas y polvo de oro que nadie quería comprar en cantidad
+            pequeña. MinEnerLex vino hasta mi zona, hizo el análisis en sitio
+            y pagó en 48 horas. Un proceso que pensé que duraría meses tomó días.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar-monogram">R</div>
+            <div class="testimonial-info">
+              <h4>Rosa Elena Quispe</h4>
+              <p>Productora Artesanal — Madre de Dios, Perú</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Proceso -->
+  <section class="section process-section" id="proceso">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
+        <span style="color: var(--gold-600); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Cómo Funciona</span>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--navy-900); margin-top: 1rem;">
+          4 Pasos Para Comprar Su Oro
+        </h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-number">01</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Primera Conversación</h3>
+            <p class="timeline-text">Cuéntenos qué material tiene. Le explicamos el proceso sin compromiso ni presión.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-number">02</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Revisión Documental</h3>
+            <p class="timeline-text">Verificamos certificados de origen y análisis. Le ayudamos si falta documentación.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-number">03</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Análisis y Verificación</h3>
+            <p class="timeline-text">Coordinamos el análisis en laboratorio acreditado (fire assay y ensayo ácido). Usted recibe el informe completo antes del pago.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-number">04</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Oferta y Pago</h3>
+            <p class="timeline-text">Oferta por escrito basada en LBMA. Pago en 48 horas si acepta.</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Benefits Section -->
-    <section class="section section--alt" aria-labelledby="beneficios-title">
-      <div class="container">
-        <header class="section__header">
-          <span class="section__eyebrow">Ventajas</span>
-          <h2 id="beneficios-title" class="section__title">¿Por Qué Vendernos Su Oro?</h2>
-        </header>
+  <!-- Beneficios -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+        <span style="color: var(--gold-600); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Ventajas</span>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--navy-900); margin-top: 1rem;">
+          Por Qué Elegir MinEnerLex
+        </h2>
+      </div>
 
-        <ul class="benefits-grid">
-          <li class="benefit">
-            <span class="benefit__icon" aria-hidden="true">⚡</span>
-            <h3 class="benefit__title">Respuesta Rápida</h3>
-            <p class="benefit__text">Contacto inicial en menos de 24 horas hábiles</p>
-          </li>
-          <li class="benefit">
-            <span class="benefit__icon" aria-hidden="true">💰</span>
-            <h3 class="benefit__title">Precios Competitivos</h3>
-            <p class="benefit__text">Alineados con el mercado internacional del oro</p>
-          </li>
-          <li class="benefit">
-            <span class="benefit__icon" aria-hidden="true">🛡️</span>
-            <h3 class="benefit__title">Operación Segura</h3>
-            <p class="benefit__text">Protocolos legales y técnicos establecidos</p>
-          </li>
-          <li class="benefit">
-            <span class="benefit__icon" aria-hidden="true">🤝</span>
-            <h3 class="benefit__title">Trato Directo</h3>
-            <p class="benefit__text">Sin intermediarios, comunicación transparente</p>
-          </li>
-          <li class="benefit">
-            <span class="benefit__icon" aria-hidden="true">🌎</span>
-            <h3 class="benefit__title">Cobertura Regional</h3>
-            <p class="benefit__text">Operamos en múltiples países de Latinoamérica y África</p>
-          </li>
-          <li class="benefit">
-            <span class="benefit__icon" aria-hidden="true">⚖️</span>
-            <h3 class="benefit__title">Asesoría Legal</h3>
-            <p class="benefit__text">Respaldamos cada operación con consultoría jurídica</p>
-          </li>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <h3 class="benefit-title">Respuesta Rápida</h3>
+          <p class="benefit-text">Contacto inicial en menos de 24 horas. Habla directamente con un ejecutivo.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">📊</div>
+          <h3 class="benefit-title">Precio Justo y Verificable</h3>
+          <p class="benefit-text">Usamos la cotización del London Bullion Market Association (LBMA). Le entregamos el cálculo por escrito antes de firmar.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🛡️</div>
+          <h3 class="benefit-title">100% Legal</h3>
+          <p class="benefit-text">Toda operación respaldada con contrato de compraventa y asesoría jurídica.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🤝</div>
+          <h3 class="benefit-title">Sin Intermediarios</h3>
+          <p class="benefit-text">Negocie directamente con quien decide. Sin comisionistas ni especuladores.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🌎</div>
+          <h3 class="benefit-title">Cobertura Regional</h3>
+          <p class="benefit-text">Operamos en zonas mineras de Perú, Bolivia, Colombia, Ecuador y África.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">⚖️</div>
+          <h3 class="benefit-title">Asesoría Integral</h3>
+          <p class="benefit-text">Desde la venta hasta la formalización completa de su operación minera.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculadora de Cotización (NUEVA) -->
+  <!-- Calculadora de Cotización (NUEVA) -->
+  <section class="section calculator-section">
+    <div class="container calculator-layout">
+      <!-- Contenedor 1: Título y Descripción -->
+      <div class="calculator-text">
+        <span style="color: var(--gold-600); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 1rem;">Herramienta Interactiva</span>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--navy-900); margin-bottom: 1.5rem; line-height: 1.2;">
+          Estime el Valor de su Producción
+        </h2>
+        <p style="font-size: 1.15rem; color: var(--navy-700); line-height: 1.6; margin-bottom: 1.5rem;">
+          Conozca al instante el valor referencial de su doré, lingotes o pepitas de oro, calculado con el precio actualizado del mercado internacional de Londres (LBMA).
+        </p>
+        <p style="font-size: 1.15rem; color: var(--navy-700); line-height: 1.6; margin-bottom: 2rem;">
+          Esta herramienta le brinda total transparencia antes de iniciar cualquier operación comercial con nosotros.
+        </p>
+        <ul style="list-style: none; padding: 0; margin-bottom: 0; font-size: 1.1rem; color: var(--navy-900); display: flex; flex-direction: column; gap: 1rem;">
+          <li style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: var(--gold-600); font-weight: bold; font-size: 1.2rem;">✓</span> Cálculo en tiempo real</li>
+          <li style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: var(--gold-600); font-weight: bold; font-size: 1.2rem;">✓</span> 100% gratuito y sin compromiso</li>
+          <li style="display: flex; align-items: center; gap: 0.75rem;"><span style="color: var(--gold-600); font-weight: bold; font-size: 1.2rem;">✓</span> Sin costos ocultos</li>
         </ul>
       </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="section" aria-labelledby="faq-title">
-      <div class="container">
-        <div class="faq-layout">
-          <div class="faq__intro">
-            <span class="section__eyebrow">Preguntas Frecuentes</span>
-            <h2 id="faq-title" class="section__title">Resolvemos Sus Dudas</h2>
-            <p class="section__description">
-              Encuentre respuestas a las preguntas más comunes sobre nuestro proceso de compra de oro.
-            </p>
-            <a href="#contacto" class="btn btn--primary">¿Tiene más preguntas? Contáctenos</a>
-          </div>
-
-          <div class="accordion" role="region" aria-label="Preguntas frecuentes">
-            <details class="accordion__item">
-              <summary class="accordion__trigger">
-                <span class="accordion__title">¿Qué documentación necesito para vender oro?</span>
-                <span class="accordion__icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="accordion__content">
-                <p>Requerimos: certificado de origen minero, análisis de laboratorio de la muestra, documento de identidad del vendedor, y constancia de la mina o operación. Nuestro equipo le guiará paso a paso.</p>
-              </div>
-            </details>
-
-            <details class="accordion__item">
-              <summary class="accordion__trigger">
-                <span class="accordion__title">¿Cómo se determina el precio del oro?</span>
-                <span class="accordion__icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="accordion__content">
-                <p>El precio se basa en la cotización internacional del oro (LBMA), ajustada por la pureza del material, el formato (doré, barras, polvo), y el volumen de la operación. Presentamos una oferta transparente antes de cualquier compromiso.</p>
-              </div>
-            </details>
-
-            <details class="accordion__item">
-              <summary class="accordion__trigger">
-                <span class="accordion__title">¿Cuánto tiempo toma el proceso de compra?</span>
-                <span class="accordion__icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="accordion__content">
-                <p>El proceso completo puede tomar entre 3 a 15 días hábiles, dependiendo de la documentación disponible, la ubicación de la operación, y la complejidad del análisis del material. Trabajamos para agilizar cada etapa.</p>
-              </div>
-            </details>
-
-            <details class="accordion__item">
-              <summary class="accordion__trigger">
-                <span class="accordion__title">¿Operan en todo el territorio?</span>
-                <span class="accordion__icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="accordion__content">
-                <p>Sí, operamos en las principales zonas mineras de Perú, Bolivia, Ecuador, Venezuela y varios países de África. Coordinamos la logística según la ubicación específica de su operación.</p>
-              </div>
-            </details>
-
-            <details class="accordion__item">
-              <summary class="accordion__trigger">
-                <span class="accordion__title">¿Ofrecen asesoría legal y técnica?</span>
-                <span class="accordion__icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="accordion__content">
-                <p>Sí, como parte de MinEnerLex Consulting, ofrecemos servicios de asesoría jurídica minera, consultoría técnica en ingeniería de minas, y acompañamiento en la comercialización de minerales.</p>
-              </div>
-            </details>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section id="contacto" class="cta-section" aria-labelledby="contacto-title">
-      <div class="container">
-        <div class="cta-card">
-          <div class="cta-card__content">
-            <span class="cta-card__eyebrow">Comience Hoy</span>
-            <h2 id="contacto-title" class="cta-card__title">
-              Venda Su Producción de Oro
-            </h2>
-            <p class="cta-card__text">
-              Respuesta en menos de 24 horas hábiles. Operamos 365 días al año.
-            </p>
-            <div class="cta-card__contact">
-              <a href="tel:+573148808015" class="contact-link">
-                <span class="contact-link__icon" aria-hidden="true">📞</span>
-                <span class="contact-link__text">314 880 8015</span>
-              </a>
-              <a href="tel:+573186297545" class="contact-link">
-                <span class="contact-link__icon" aria-hidden="true">📞</span>
-                <span class="contact-link__text">318 629 7545</span>
-              </a>
+      <!-- Contenedor 2: La Calculadora -->
+      <div class="calculator-widget">
+        <div class="calculator-card">
+          <div class="calculator-header">
+            <div class="calculator-icon">⚖️</div>
+            <div>
+              <h3 class="calculator-title" style="margin: 0; font-family: 'Inter', sans-serif; font-size: 1.4rem;">Calculadora de Estima</h3>
             </div>
-            <a href="mailto:contacto@minenerlexconsulting.com" class="btn btn--primary btn--large">
-              Contactar Ahora
-              <span aria-hidden="true">→</span>
-            </a>
+          </div>
+
+          <div class="calculator-grid" style="grid-template-columns: 1fr; gap: 1.5rem;">
+            <div class="input-group">
+              <label class="input-label">Peso en Gramos (Bruto)</label>
+              <input type="number" id="gold-weight" class="input-field" placeholder="Ej: 500" oninput="updateCalculation()">
+            </div>
+            <div class="input-group">
+              <label class="input-label">Pureza Estimada (%)</label>
+              <select id="gold-purity" class="input-field" onchange="updateCalculation()">
+                <option value="0.999">Oro Fino (.999)</option>
+                <option value="0.950">Oro Refinado (.950)</option>
+                <option value="0.850" selected>Doré Estándar (.850)</option>
+                <option value="0.750">Doré Bajo (.750)</option>
+                <option value="0.500">Material de Mina (.500)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calculator-result">
+            <div class="result-item">
+              <span class="result-label">Gramos Finos Estimados:</span>
+              <span class="result-value" id="fine-grams">0.00g</span>
+            </div>
+            <div class="result-main">
+              <span class="result-total-label">VALOR ESTIMADO TOTAL</span>
+              <span class="result-total-amount" id="total-price">$0.00 USD</span>
+            </div>
+            <p class="result-note">* Esta es una estima basada en el precio LBMA de hoy (~$75 USD/g fino). El valor real se determina tras análisis de laboratorio.</p>
+          </div>
+
+          <div style="text-align: center; margin-top: 2rem;">
+            <a href="#contacto" class="btn btn-primary btn-lg" style="width: 100%;">Garantizar Este Precio Ahora</a>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 3rem;">
+        <span style="color: var(--gold-600); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Preguntas Frecuentes</span>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--navy-900); margin-top: 1rem;">
+          Resolvemos Sus Dudas
+        </h2>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Qué documentación necesito para vender oro?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Generalmente solicitamos: certificado de origen minero, análisis de laboratorio si lo tiene, y documento de identidad. Si le falta algo, le ayudamos a gestionarlo. No dejamos que un trámite detenga una operación justa.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Cómo se determina el precio de compra?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Tomamos la cotización del día en el mercado de Londres, multiplicamos por los gramos finos confirmados en laboratorio, y descontamos únicamente los costos reales de refinación si aplica. El cálculo es transparente: se lo enviamos antes de cualquier acuerdo.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Cuánto tiempo toma el proceso completo?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Entre 3 y 15 días hábiles, dependiendo de la documentación disponible y la ubicación. Operaciones simples con lingotes certificados pueden cerrarse en 48 horas.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Operan en zonas remotas?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Sí. Tenemos experiencia en zonas de difícil acceso de Perú, Bolivia, Colombia, Ecuador y África occidental. Nos movemos a donde esté usted o coordinamos un punto seguro.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>¿Ofrecen otros servicios además de la compra?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Como consultora integral, ofrecemos asesoría jurídica minera, gestión de permisos y consultoría técnica. Muchos clientes empezaron vendiéndonos material y hoy les ayudamos a formalizar toda su operación.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="section cta-section" id="contacto">
+    <div class="cta-bg"></div>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="cta-card">
+        <span style="color: var(--gold-400); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">Sin Compromiso</span>
+        <h2 class="cta-title">Reciba una Cotización en 24 Horas</h2>
+        <p class="cta-text">Cuéntenos qué material tiene y le decimos cuánto podemos pagarle. Sin costos ocultos.</p>
+
+        <div class="cta-contacts">
+          <a href="https://wa.me/573148808015" class="cta-contact-btn">
+            <span>💬</span>
+            <span>WhatsApp: 314 880 8015</span>
+          </a>
+          <a href="tel:+573148808015" class="cta-contact-btn">
+            <span>📞</span>
+            <span>Llamar Ahora</span>
+          </a>
+        </div>
+
+        <a href="mailto:cotizaciones@minenerlexconsulting.com" class="btn btn-primary btn-lg" style="margin-top: 1rem;">
+          Enviar Detalles por Email →
+        </a>
+
+        <div class="cta-guarantee">
+          <span>🔒</span>
+          <span>Su información se maneja con total confidencialidad</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
+  <footer class="footer">
     <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <a href="/" class="logo" aria-label="MinEnerLex Consulting - Inicio">
-            <span class="logo__icon" aria-hidden="true">◆</span>
-            <span class="logo__text">MinEnerLex</span>
-          </a>
-          <p class="footer__tagline">
-            Consultores internacionales en compra de oro y asesoría minera.
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon" style="width: 40px; height: 40px; font-size: 1.25rem;">◆</div>
+            <span>MinEnerLex</span>
+          </div>
+          <p class="footer-desc">
+            Más de 10 años comprando producción minera a precio justo.
+            Su socio estratégico en la comercialización de metales preciosos.
           </p>
+          <div class="footer-social">
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">fb</a>
+            <a href="#" class="social-link">ig</a>
+          </div>
         </div>
 
-        <div class="footer__section">
-          <h3 class="footer__heading">Servicios</h3>
-          <ul class="footer__list">
-            <li><a href="#formatos">Compra de Oro</a></li>
-            <li><a href="#">Asesoría Jurídica Minera</a></li>
+        <div>
+          <h4 class="footer-title">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="#">Compra de Oro</a></li>
+            <li><a href="#">Asesoría Legal</a></li>
             <li><a href="#">Consultoría Técnica</a></li>
-            <li><a href="#">Comercialización</a></li>
+            <li><a href="#">Gestión de Permisos</a></li>
           </ul>
         </div>
 
-        <div class="footer__section">
-          <h3 class="footer__heading">Contacto</h3>
-          <address class="footer__address">
-            <p>Carrera 4 N. 6A - 161</p>
-            <p>Bocagrande, Cartagena de Indias</p>
-            <p>Tel: <a href="tel:+573148808015">314 880 8015</a></p>
-            <p>Tel: <a href="tel:+573186297545">318 629 7545</a></p>
-          </address>
+        <div>
+          <h4 class="footer-title">Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+573148808015">+57 314 880 8015</a></li>
+            <li><a href="tel:+573186297545">+57 318 629 7545</a></li>
+            <li><a href="mailto:cotizaciones@minenerlexconsulting.com">Email</a></li>
+            <li>Carrera 4 N. 6A-161, Bocagrande</li>
+            <li>Cartagena, Colombia</li>
+          </ul>
         </div>
 
-        <div class="footer__section">
-          <h3 class="footer__heading">Operaciones</h3>
-          <ul class="footer__list">
-            <li>Perú</li>
-            <li>Bolivia</li>
-            <li>Ecuador</li>
-            <li>Venezuela</li>
-            <li>África</li>
+        <div>
+          <h4 class="footer-title">Operaciones</h4>
+          <ul class="footer-links">
+            <li>🇵🇪 Perú</li>
+            <li>🇧🇴 Bolivia</li>
+            <li>🇨🇴 Colombia</li>
+            <li>🇪🇨 Ecuador</li>
+            <li>🌍 África Occidental</li>
           </ul>
         </div>
       </div>
 
-      <div class="footer__bottom">
-        <p class="footer__legal">
-          © 2025 MinEnerLex Consulting. Todos los derechos reservados.
-        </p>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 MinEnerLex Consulting SAS. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos de Servicio</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('header-scrolled');
+      } else {
+        header.classList.remove('header-scrolled');
+      }
+    });
+
+    // FAQ Toggle
+    function toggleFaq(button) {
+      const item = button.parentElement;
+      const isActive = item.classList.contains('active');
+
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(faq => {
+        faq.classList.remove('active');
+      });
+
+      // Open clicked if wasn't active
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+
+    // Create particles
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 30; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.top = Math.random() * 100 + '%';
+      particle.style.animationDelay = Math.random() * 6 + 's';
+      particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
+      particlesContainer.appendChild(particle);
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Reveal on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.card, .benefit-card, .timeline-item').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+
+    // Gold Calculator Logic
+    function updateCalculation() {
+      const weight = parseFloat(document.getElementById('gold-weight').value) || 0;
+      const purity = parseFloat(document.getElementById('gold-purity').value) || 0;
+      const marketPrice = 75.40; // Precio simulado LBMA por gramo fino USD
+
+      const fineGrams = weight * purity;
+      const totalValue = fineGrams * marketPrice;
+
+      document.getElementById('fine-grams').innerText = fineGrams.toFixed(2) + 'g';
+      document.getElementById('total-price').innerText = '$' + totalValue.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) + ' USD';
+    }
+  </script>
 </body>
 </html>
