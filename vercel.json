@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    {
+      "source": "/compra-de-oro-en-mina",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/compra-de-oro-en-mina",
+      "permanent": true
+    }
+  ]
+}
