@@ -2,11 +2,14 @@
   "rewrites": [
     {
       "source": "/compra-de-oro-en-mina",
-      "destination": "/compra-de-oro-en-mina/index.html"
-    },
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
     {
-      "source": "/compra-de-plata",
-      "destination": "/compra-de-plata/index.html"
+      "source": "/",
+      "destination": "/compra-de-oro-en-mina",
+      "permanent": true
     }
   ]
 }
