@@ -76,6 +76,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -1415,8 +1416,19 @@ img {
     align-items: center;
   }
 
+  .container {
+    padding: 0 1rem;
+  }
+
   .hero-actions .btn {
     width: 100%;
+    white-space: normal;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .btn-lg {
+    padding: 1rem 1.25rem !important;
+    font-size: 1rem !important;
   }
 
   .floating-whatsapp {
