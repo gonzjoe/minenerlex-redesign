@@ -1626,3 +1626,64 @@ img {
     gap: 2rem;
   }
 }
+
+/* ==================== */
+/* SOMAR UI ADAPTATIONS */
+/* ==================== */
+
+/* Floating WhatsApp */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+.floating-whatsapp:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+}
+
+/* Section Grid Background */
+.section-grid-bg {
+  background-color: var(--navy-50);
+  background-image: 
+    linear-gradient(rgba(10, 25, 47, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 25, 47, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center center;
+}
+
+/* Watermark Numbers */
+.position-relative {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.watermark-number {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  font-size: 10rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: rgba(10, 25, 47, 0.04);
+  line-height: 1;
+  z-index: -1;
+  user-select: none;
+  pointer-events: none;
+  transition: color 0.3s ease, transform 0.4s ease;
+}
+.benefit-card:hover .watermark-number {
+  color: rgba(212, 175, 55, 0.1);
+  transform: translateY(-10px) scale(1.05);
+}
