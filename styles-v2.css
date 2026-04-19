@@ -1438,6 +1438,26 @@ img {
     height: 60px;
   }
 
+  .cta-card {
+    padding: 2.5rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .cta-title {
+    font-size: 1.85rem;
+  }
+
+  .cta-contacts {
+    gap: 1rem;
+  }
+
+  .cta-contact-btn {
+    padding: 0.85rem 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
+  }
+
   .logo span {
     font-size: 1.4rem;
   }
