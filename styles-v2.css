@@ -1256,10 +1256,11 @@ img {
 
 .footer-links li {
   margin-bottom: 0.75rem;
+  color: var(--gray-400);
 }
 
 .footer-links a {
-  color: var(--gray-500);
+  color: var(--gray-400);
   text-decoration: none;
   transition: color 0.3s;
 }
