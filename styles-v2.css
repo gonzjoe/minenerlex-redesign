@@ -1302,10 +1302,6 @@ img {
 }
 
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
   .section {
     padding: 4rem 0;
   }
@@ -1314,14 +1310,8 @@ img {
     display: none;
   }
 
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .benefits-grid {
-    grid-template-columns: 1fr;
-  }
-
+  .cards-grid,
+  .benefits-grid,
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1330,6 +1320,56 @@ img {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+
+  /* Ajustes de tipografía y espaciado para móviles */
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.85rem !important;
+  }
+
+  .hero {
+    padding-top: 120px;
+    text-align: center;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .floating-whatsapp {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .floating-whatsapp svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* Cabecera móvil simplificada */
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo span {
+    font-size: 1.4rem;
+  }
+
+  .header-inner .btn-primary {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
   }
 }
 
