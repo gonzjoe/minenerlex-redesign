@@ -3,6 +3,10 @@
     {
       "source": "/compra-de-oro-en-mina",
       "destination": "/index.html"
+    },
+    {
+      "source": "/compra-de-plata",
+      "destination": "/compra-de-plata/index.html"
     }
   ],
   "redirects": [
