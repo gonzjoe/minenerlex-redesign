@@ -36,8 +36,13 @@
         <a href="#testimonios" class="nav-link">Testimonios</a>
         <a href="#faq" class="nav-link">FAQ</a>
       </nav>
-      <div style="flex: 1; display: flex; justify-content: flex-end;">
-        <a href="#contacto" class="btn btn-primary">Cotizar Ahora</a>
+      <div class="header-actions">
+        <a href="#contacto" class="btn btn-primary d-desktop">Cotizar Ahora</a>
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
@@ -653,6 +658,22 @@
     document.querySelectorAll('.card, .benefit-card, .timeline-item').forEach(el => {
       el.classList.add('reveal');
       observer.observe(el);
+    });
+
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navDesktop = document.querySelector('.nav-desktop');
+    const body = document.body;
+
+    menuToggle.addEventListener('click', () => {
+      body.classList.toggle('mobile-menu-active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        body.classList.remove('mobile-menu-active');
+      });
     });
 
     // Gold Calculator Logic
